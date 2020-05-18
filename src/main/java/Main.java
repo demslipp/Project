@@ -34,9 +34,11 @@ public class Main extends Application{
         Slider slider=new Slider(0.0, 100.0, 50.0);
         slider.setShowTickMarks(true);
         slider.setShowTickLabels(true);
-        slider.setBlockIncrement(1.0);
-        slider.setMajorTickUnit(5.0);
-        slider.setMinorTickCount(1);
+        slider.setBlockIncrement(100);
+        slider.setMajorTickUnit(100);
+        slider.setMinorTickCount(100);
+        slider.setMax(100);
+
 
         slider.setSnapToTicks(true);
 
