@@ -8,19 +8,20 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import objects.Employee;
 
 import java.time.LocalDate;
 
 public class Main extends Application{
 
     public static void main(String[] args){
-       /* Employee employee=new Employee();
+       Employee employee=new Employee();
         employee.newJunior(1, "A", "B");
         System.out.println(employee.toString());
         employee.newMiddle(2, "C", "D");
         System.out.println(employee.toString());
         employee.newSenior(3, "E", "F");
-        System.out.println(employee.toString());*/
+        System.out.println(employee.toString());
         Application.launch(args);
     }
 
@@ -31,13 +32,13 @@ public class Main extends Application{
         primaryStage.setWidth(1200);
         primaryStage.setHeight(600);
 
-        Slider slider=new Slider(0.0, 100.0, 50.0);
+        Slider slider=new Slider();
         slider.setShowTickMarks(true);
         slider.setShowTickLabels(true);
         slider.setBlockIncrement(100);
         slider.setMajorTickUnit(100);
         slider.setMinorTickCount(100);
-        slider.setMax(100);
+
 
 
         slider.setSnapToTicks(true);
