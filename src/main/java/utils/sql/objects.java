@@ -5,17 +5,17 @@ import java.math.BigInteger;
 
 @Entity
 @Table(name="objects")
-public class Objects{
+public class objects{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private BigInteger id;
 
-    @Column(name="objectName", length=50)
+    @Column(name="name", length=50)
     private String name;
 
     @Id
-    @Column(name="objectTypeId")
-    private BigInteger objectTypeId;
+    @Column(name="obj_type_id")
+    private BigInteger obj_type_id;
 
     public BigInteger getId(){
         return id;
@@ -33,11 +33,11 @@ public class Objects{
         this.name=name;
     }
 
-    public BigInteger getObjectTypeId(){
-        return objectTypeId;
+    public BigInteger getObj_type_id(){
+        return obj_type_id;
     }
 
-    public void setObjectTypeId(BigInteger objectTypeId){
-        this.objectTypeId=objectTypeId;
+    public void setObj_type_id(BigInteger obj_type_id){
+        this.obj_type_id=obj_type_id;
     }
 }
