@@ -1,46 +1,46 @@
 package objects;
 
-public class Employee{
+public class ExampleEmployee{
     private int id;
     private String name;
     private String surname;
     private Post post;
 
-    public Employee(){
+    public ExampleEmployee(){
     }
 
-    public Employee(int id, String name, String surname, Post post){
+    public ExampleEmployee(int id, String name, String surname, Post post){
         this.id=id;
         this.name=name;
         this.surname=surname;
         this.post=post;
     }
 
-    public Employee newJunior(int id, String name, String surname){
+    public ExampleEmployee newJunior(int id, String name, String surname){
         Post post=new Post(1, 10, 40);
         this.id=id;
         this.name=name;
         this.surname=surname;
         this.post=post;
-        return new Employee(id, name, surname, post);
+        return new ExampleEmployee(id, name, surname, post);
     }
 
-    public Employee newMiddle(int id, String name, String surname){
+    public ExampleEmployee newMiddle(int id, String name, String surname){
         Post post=new Post(3, 20, 60);
         this.id=id;
         this.name=name;
         this.surname=surname;
         this.post=post;
-        return new Employee(id, name, surname, post);
+        return new ExampleEmployee(id, name, surname, post);
     }
 
-    public Employee newSenior(int id, String name, String surname){
+    public ExampleEmployee newSenior(int id, String name, String surname){
         Post post=new Post(5, 30, 80);
         this.id=id;
         this.name=name;
         this.surname=surname;
         this.post=post;
-        return new Employee(id, name, surname, post);
+        return new ExampleEmployee(id, name, surname, post);
     }
 
     @Override
