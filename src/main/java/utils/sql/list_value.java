@@ -15,7 +15,7 @@ public class list_value{
     private BigInteger id;
 
     @Column(name="name")
-    private String listName;
+    private String name;
 
     @Id
     @Column(name="list_id")
@@ -29,12 +29,12 @@ public class list_value{
         this.id=id;
     }
 
-    public String getListName(){
-        return listName;
+    public String getName(){
+        return name;
     }
 
-    public void setListName(String listName){
-        this.listName=listName;
+    public void setName(String name){
+        this.name=name;
     }
 
     public BigInteger getList_id(){

@@ -18,12 +18,12 @@ public class attr_object_type{
     @Column(name="object_type_id")
     private BigInteger object_type_id;
 
-    public BigInteger getAttr_Id(){
+    public BigInteger getAttr_id(){
         return attr_Id;
     }
 
-    public void setAttr_Id(BigInteger attr_Id){
-        this.attr_Id=attr_Id;
+    public void setAttr_Id(BigInteger attr_id){
+        this.attr_Id=attr_id;
     }
 
     public BigInteger getObject_type_id(){
