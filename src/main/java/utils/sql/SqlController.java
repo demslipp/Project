@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class SqlController{
 
+    /*
     public BigInteger getRef_id(){
         return ref_id;
     }
@@ -13,7 +14,6 @@ public class SqlController{
         this.ref_id=ref_id;
     }
 
-    /*
     //table references
 
     public void setReferenceId(BigInteger attrId, BigInteger referenceId){
